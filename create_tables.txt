@@ -1,0 +1,17 @@
+mysql -u *** -p 
+
+вводим пароль 
+
+create database test;  
+
+use test;
+
+CREATE TABLE posts (id INT(10) NOT NULL AUTO_INCREMENT, userid INT(10) NOT NULL , title VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , body TEXT NOT NULL, PRIMARY KEY (id) ) ENGINE = InnoDB;
+
+CREATE TABLE comments (id INT(10) NOT NULL AUTO_INCREMENT, postid INT(10) NOT NULL , name VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , email VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL , body TEXT NOT NULL, PRIMARY KEY (id) ) ENGINE = InnoDB;
+
+
+
+
+
+
